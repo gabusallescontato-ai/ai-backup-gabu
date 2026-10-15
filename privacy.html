@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidade da integração pessoal AI Backup Gabu.">
+  <title>Política de privacidade · AI Backup Gabu</title>
+  <style>
+    :root{color-scheme:light;--ink:#162c38;--muted:#526572;--line:#d6e0e6;--paper:#f3f6f8;--accent:#135a72}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}header,main,footer{max-width:850px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;gap:24px;align-items:center;border-bottom:1px solid var(--line)}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}main{padding-top:48px;padding-bottom:56px}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.2;margin:0 0 16px;letter-spacing:-.03em}h2{font-size:1.25rem;margin:34px 0 10px}.date,footer{color:var(--muted);font-size:.9rem}footer{border-top:1px solid var(--line)}@media(max-width:480px){header,main,footer{padding-left:20px;padding-right:20px}header{align-items:flex-start;flex-direction:column;gap:10px}}
+  </style>
+</head>
+<body>
+  <header><strong>AI Backup Gabu</strong><nav aria-label="Navegação principal"><a href="index.html">Página inicial</a></nav></header>
+  <main>
+    <h1>Política de privacidade</h1><p class="date">Versão inicial · 14 de outubro de 2026</p>
+    <p>Esta política descreve o AI Backup Gabu, uma integração pessoal de backup administrada pelo próprio titular. A rotina automática está em preparação; a seleção inicial será limitada a projetos técnicos explicitamente escolhidos.</p>
+    <h2>Finalidade e permissão do Google</h2><p>A integração usa o rclone com o escopo <code>drive.file</code> da API do Google Drive. Essa permissão permite trabalhar com arquivos criados ou usados com o aplicativo, sem solicitar acesso geral aos arquivos da conta.</p>
+    <h2>Dados e armazenamento</h2><p>Testes de conexão podem criar pastas e arquivos fictícios. O fluxo de backup com restic cifra o conteúdo e os metadados dos snapshots no computador antes do envio. O Google recebe os objetos cifrados e metadados operacionais, como identificadores, tamanhos, datas e atividade da integração.</p><p>O repositório fica na conta do Drive escolhida pelo titular. Cópias locais necessárias à operação permanecem nas máquinas autorizadas. Nesta etapa, dados de clientes, credenciais, anexos, bancos operacionais e históricos brutos ficam fora da seleção do backup.</p>
+    <h2>Credenciais e recuperação</h2><p>As credenciais OAuth permanecem no consumidor local rclone, sob controle do titular. A senha de recuperação deve ser conservada separadamente: não é publicada neste site nem incluída no próprio repositório cifrado.</p><p>Sem uma senha válida e acesso ao repositório, a integração não consegue restaurar os backups.</p>
+    <h2>Compartilhamento e uso</h2><p>A integração não vende dados, não usa o conteúdo para publicidade e não oferece compartilhamento com outros usuários. O Google processa os objetos armazenados no Drive conforme suas próprias condições e políticas.</p><p>Este site é estático e informativo: não possui formulário de coleta, login, recursos de análise de audiência ou acesso aos backups. A hospedagem no GitHub Pages pode processar informações técnicas das visitas conforme a política do GitHub.</p>
+    <h2>Controle do titular e exclusão</h2><p>O titular pode parar a rotina, revogar o acesso do aplicativo na Conta Google e administrar os objetos no próprio Drive. Revogar o acesso não apaga cópias já armazenadas; a exclusão e a retenção são administradas pelo titular.</p>
+    <h2>Alterações e contato</h2><p>Esta descrição será atualizada se a seleção de dados ou o fluxo mudar. O endereço de suporte do titular está disponível na tela de consentimento OAuth do Google.</p><p><a href="index.html">Voltar à descrição do aplicativo</a>.</p>
+  </main>
+  <footer>AI Backup Gabu · Uso pessoal</footer>
+</body>
+</html>
